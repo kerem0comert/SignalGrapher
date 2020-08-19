@@ -3,25 +3,13 @@ from bs4 import BeautifulSoup
 from terminaltables import AsciiTable
 from time import sleep
 import matplotlib.pyplot as plt
-import numpy as np
 import datetime
 import random
-
-
-
-
-"""x = range(i)
-    y = range(i)
-    plt.plot(x, y)
-    plt.title(str(i))
-    plt.draw()
-    plt.pause(0.1)"""
-
 
 plt.ion()
 plt.xlabel('Time')
 plt.ylabel('Signal Strength (dB)')
-plt.ylim(25,90)
+plt.ylim(20,90)
 plt.xlim(0,100)
 i = 0
 while 1:
